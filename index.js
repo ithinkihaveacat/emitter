@@ -13,7 +13,7 @@ module.exports = Emitter;
 
 function Emitter(obj) {
   if (obj) return mixin(obj);
-};
+}
 
 /**
  * Mixin the emitter properties.
@@ -85,7 +85,7 @@ Emitter.prototype.removeEventListener = function(event, fn){
   this._callbacks = this._callbacks || {};
 
   // all
-  if (0 == arguments.length) {
+  if (0 === arguments.length) {
     this._callbacks = {};
     return this;
   }
